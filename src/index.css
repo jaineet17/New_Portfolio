@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-gray-900;
+  }
+
+  body {
+    @apply font-orbitron text-white;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-neon-pink;
+  }
+
+  .neon-glow {
+    @apply shadow-[0_0_10px_#00FFEE];
+  }
+
+  .neon-text {
+    @apply text-neon-blue;
+  }
+
+  .terminal-input {
+    @apply bg-gray-900 border border-neon-blue p-4 rounded-lg;
+  }
+
+  .terminal-text {
+    @apply font-mono text-neon-blue;
+  }
+
+  .nav-link {
+    @apply transition-colors hover:text-neon-blue;
+  }
+
+  .nav-link-active {
+    @apply text-neon-blue;
+  }
+
+  .btn-primary {
+    @apply bg-neon-blue text-gray-900 px-6 py-3 rounded-lg font-orbitron 
+           hover:bg-blue-400 transition-colors;
+  }
+
+  .card {
+    @apply bg-gray-800 p-6 rounded-lg;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neon-blue rounded-full;
+}
+
+/* Selection color */
+::selection {
+  @apply bg-neon-blue text-gray-900;
+} 
