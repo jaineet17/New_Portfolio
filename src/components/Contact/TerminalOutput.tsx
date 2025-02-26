@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { FaCheckCircle, FaExclamationTriangle, FaInfo } from 'react-icons/fa';
 
