@@ -1,7 +1,7 @@
+// Import only what you use
 import { useRef, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
-import { Point3D } from '../../types';
 
 interface ParticleFieldProps {
   count?: number;
@@ -10,6 +10,8 @@ interface ParticleFieldProps {
   speed?: number;
   spread?: number;
 }
+
+// Rest of component remains unchanged
 
 export default function ParticleField({
   count = 1000,
