@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import PageTransition from '../components/UI/PageTransition';
 import { missions } from '../data/missions';
