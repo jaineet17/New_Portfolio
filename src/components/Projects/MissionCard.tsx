@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaBuilding, FaCalendar } from 'react-icons/fa';
 import { Mission } from '../../types';
