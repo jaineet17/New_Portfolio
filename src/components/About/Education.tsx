@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGraduationCap, FaMapMarkerAlt } from 'react-icons/fa';
 import { profileData } from '../../data/profile';
