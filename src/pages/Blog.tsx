@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaSearch, FaTag } from 'react-icons/fa';
 import PageTransition from '../components/UI/PageTransition';
