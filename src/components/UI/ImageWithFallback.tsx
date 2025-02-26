@@ -23,7 +23,7 @@ export default function ImageWithFallback({
         src={error ? fallbackSrc : src}
         alt={alt}
         className={`${className} ${loading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}
-        onError={(e) => {
+        onError={() => {
           console.error(`Failed to load image: ${src}`);
           setError(true);
         }}
@@ -32,4 +32,4 @@ export default function ImageWithFallback({
       />
     </div>
   );
-} 
+}
