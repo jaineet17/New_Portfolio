@@ -1,4 +1,4 @@
-import React from 'react';
+// For ErrorFallback.tsx
 import { FaExclamationTriangle } from 'react-icons/fa';
 
 interface ErrorFallbackProps {
