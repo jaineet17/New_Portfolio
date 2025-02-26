@@ -1,6 +1,7 @@
-import { useRef, useMemo, useEffect } from 'react';
+import { useRef, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
+import { useEffect } from 'react';
 
 interface Point {
   position: THREE.Vector3;
@@ -10,7 +11,6 @@ interface Point {
 
 export default function MouseTrail() {
   const points = useRef<Point[]>([]);
-  const group = useRef<THREE.Group>(null);
   const mouse = useRef({ x: 0, y: 0, z: 0 });
   const maxPoints = 50;
   const pointLifetime = 1; // seconds
@@ -81,22 +81,22 @@ export default function MouseTrail() {
     };
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
   return (
     <points>
-      <bufferGeometry ref={geometry}>
+      <bufferGeometry attach="geometry">
         <bufferAttribute
-          attachObject={['attributes', 'position']}
+          attach="attributes-position"
           count={positions.length / 3}
           array={positions}
           itemSize={3}
         />
         <bufferAttribute
-          attachObject={['attributes', 'size']}
+          attach="attributes-size"
           count={sizes.length}
           array={sizes}
           itemSize={1}
@@ -112,4 +112,4 @@ export default function MouseTrail() {
       />
     </points>
   );
-} 
+}
