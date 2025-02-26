@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, ChangeEvent, KeyboardEvent } from 'react';
+import { useState, useRef, useEffect, ChangeEvent, KeyboardEvent } from 'react';
 import { motion } from 'framer-motion';
 import { useSound } from '../../hooks/useSound';
 
