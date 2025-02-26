@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaUser, FaGamepad, FaBook, FaEnvelope, FaChevronRight } from 'react-icons/fa';
 import { useSound } from '../../hooks/useSound';
