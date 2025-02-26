@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { BlogPost } from '../../types';
 import { Link } from 'react-router-dom';
