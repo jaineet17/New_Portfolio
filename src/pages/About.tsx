@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaBook } from 'react-icons/fa';
 import PlayerStats from '../components/About/PlayerStats';
