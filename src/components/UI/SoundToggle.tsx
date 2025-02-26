@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { FaVolumeUp, FaVolumeMute } from 'react-icons/fa';
 import { useGame } from '../../context/GameContext';
