@@ -1,6 +1,6 @@
-import { useRef, useEffect } from 'react';
+// Fix imports
+import { useRef } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
-import { Vector3 } from 'three';
 
 export default function MouseTracker() {
   const { camera } = useThree();
@@ -21,10 +21,14 @@ export default function MouseTracker() {
     targetRotation.current.x = mouse.current.y * 0.2;
   };
 
-  React.useEffect(() => {
+  // Replace React.useEffect with useEffect from import
+  useEffect(() => {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
   return null;
-} 
+}
+
+// Add missing import at the top
+import { useEffect } from 'react';
