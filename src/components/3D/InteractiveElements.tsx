@@ -1,4 +1,5 @@
-import React, { useRef, useState } from 'react';
+// Remove React import
+import { useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { Text } from '@react-three/drei';
 import * as THREE from 'three';
